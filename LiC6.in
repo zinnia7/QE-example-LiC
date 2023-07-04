@@ -1,0 +1,38 @@
+&CONTROL
+ calculation = 'vc-relax',
+ prefix = 'LiC6',
+ /
+&SYSTEM
+ ibrav = 0,
+ nat = 7,
+ ntyp = 2,
+ ecutwfc = 45,
+ ecutrho = 360,
+ occupations = 'smearing',
+ degauss = 0.01,
+ input_dft = 'vdw-df2-b86r',
+ /
+&ELECTRONS
+ /
+&IONS
+ /
+&CELL
+ /
+CELL_PARAMETERS angstrom
+  4.306932   0.000000   0.000000
+ -2.153466   3.729913   0.000000
+  0.000000   0.000000   3.649504
+ATOMIC_SPECIES
+Li 6.94 li_pbe_v1.4.uspp.F.UPF
+C 12.011 C.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS angstrom
+Li   0.000000   0.000000   0.000000 1 1 1
+C   -0.718423   1.244345   1.824752 1 1 1
+C    1.435043   2.485568   1.824752 1 1 1
+C    1.436846   0.000000   1.824752 1 1 1
+C   -1.435043   2.485568   1.824752 1 1 1
+C    0.718423   1.244345   1.824752 1 1 1
+C    2.870086   0.000000   1.824752 1 1 1
+K_POINTS automatic
+7 7 9 0 0 0
+
